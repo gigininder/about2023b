@@ -3,29 +3,57 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>帥哥20230921a</title>
+	<title>吉祥個人網頁</title>
+	<style type="text/css">
+		* { font-family:"標楷體"; margin-left:auto; margin-right:auto;}
+		h1 {color:#7700BB; font-size:60px;}
+		h2 {color:#FFB3FF; font-size:40px;}
+	</style>
+<script>
+		function change1() {
+			document.getElementById("pic").src = "mountain.jpg";
+			document.getElementById("h2text").innerText = "靜宜資管";
+		}
+		function change2() {
+			document.getElementById("pic").src = "cliff.jpg";
+			document.getElementById("h2text").innerText = "Jun-Xiang Huang";
+		}
+	</script>
 </head>
-</body>
-	<img src="cliff.jpg"></img>
-
-	<h1>黃俊翔<h1>
-	<h2>Jun-Xiang Huang<h2>
-
-
-	<a href="https://www1.pu.edu.tw/~tcyang">個人網頁</a>：https://www1.pu.edu.tw/~tcyang<br>
-	<a href="https://www.facebook.com/tcyang1971" target="_blank">FB</a>：https://www.facebook.com/tcyang1971<br>
+<body>
+	<?php echo date("Y-m-d") ?>
+	<table width="70%">
+		<tr>
+			<td>
+			<img src="cliff.jpg" width="100%">id="piconmouseover="change1()" onmouseout="change2()"></img>
+		</td>
+		<td>
+			<h1>黃俊翔</h1>
+			<h2 id="h2text">Jun-Xiang Huang</h2>
+		</td>
+	</tr>
+</table>
 	
-	Tel: 0935858208<br>
-	E-Mail: jshuang1225@gmail.com<br>
-
-	大象席地而坐電影配樂<br>
-	<audio controls>
-		<source src="elephant.mp3" type="audio/mP3">
-	</audio><br>
-
-	不要去臺灣<br>
-	<iframe src="https://www.youtube.com/embed/pW88QFpHXa8" allowfullscreen></iframe>
-
-
+<table width="70%" border="1">
+	<tr>
+		<td>
+			個人網頁：<a href="https://www1.pu.edu.tw/~tcyang">https://www1.pu.edu.tw/~tcyang</a><br>
+			FB:<a href="https://www.facebook.com/tcyang1971" target="_blank">https://www.facebook.com/tcyang1971</a><br>
+			Tel: 0935858208</a><br>
+			E-Mail: jshuang1225@gmail.com</a><br>
+		</td>
+		
+		<td>	
+			大象席地而坐電影配樂<br>
+				<audio controls>
+					<source src="elephant.mp3" type="audio/mP3">
+				</audio><br>
+		</td>
+		
+		<td>		
+			不要去臺灣<br>
+			<iframe src="https://www.youtube.com/embed/pW88QFpHXa8" allowfullscreen></iframe>
+		</td>		
+	</tr>	
 </body>
 </html>
